@@ -4,9 +4,13 @@ from tkinter import messagebox
 
 class GUI:
 
-    def __init__(self):
+    def __init__(self, string):
+        # Declare variables
+        self.string = string
+
         # Maak de main window aan
         self.main_window = tkinter.Tk()
+
 
         # Maak twee frames aan (top and bottom)
         self.top_frame = tkinter.Frame(self.main_window)
@@ -38,12 +42,13 @@ class GUI:
         tkinter.mainloop()
 
     def do_something(self):
+        print(self.string)
         tkinter.messagebox.showinfo("Response",
                                     "Bedankt voor het klikken!")
 
 
 def main():
-    gui = GUI()
+    gui = GUI("Hello world!")
     print("Hello world!")
 
 main()
