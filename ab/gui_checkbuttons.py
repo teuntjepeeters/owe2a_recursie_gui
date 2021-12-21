@@ -62,6 +62,7 @@ class GUI:
             self.message = self.message + "Toast"
         tkinter.messagebox.showinfo("Ontbijt", self.message)
 
+
 def main():
     gui = GUI()
 
