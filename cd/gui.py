@@ -40,6 +40,7 @@ class GUI:
                                     "Bedankt voor het klikken!")
         print("Hello world!")
 
+
 def main():
     gui = GUI()
 
